@@ -1,0 +1,9 @@
+{{#if site.mobileView}}
+  {{#if siteSettings.codefund_mobile_topic_above_suggested_code}}
+    {{google-dfp-ad placement="topic-above-suggested" refreshOnChange=model.id category=model.category.slug}}
+  {{/if}}
+{{else}}
+  {{#if siteSettings.codefund_topic_above_suggested_code}}
+    {{google-dfp-ad placement="topic-above-suggested" refreshOnChange=model.id category=model.category.slug}}
+  {{/if}}
+{{/if}}

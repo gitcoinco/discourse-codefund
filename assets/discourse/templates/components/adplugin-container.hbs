@@ -1,0 +1,13 @@
+{{#if site.mobileView}}
+  {{#if model.postSpecificCountCodeFund}}
+    {{#if siteSettings.codefund_post_bottom_code}}
+      {{code-fund-ad placement="post-bottom" category=model.topic.category.slug postNumber=model.post_number}}
+    {{/if}}
+  {{/if}}
+{{else}}
+  {{#if model.postSpecificCountCodeFund}}
+    {{#if siteSettings.codefund_post_bottom_code}}
+      {{code-fund-ad placement="post-bottom" category=model.topic.category.slug postNumber=model.post_number}}
+    {{/if}}
+  {{/if}}
+{{/if}}

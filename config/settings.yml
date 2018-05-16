@@ -1,0 +1,150 @@
+codefund_plugin:
+  codefund_publisher_id:
+    client: true
+    default: ''
+  codefund_through_trust_level:
+    client: true
+    default: 2
+    enum: 'TrustLevelSetting'
+  codefund_topic_list_top_code:
+    client: true
+    default: ''
+    max: 50
+  codefund_topic_list_top_ad_sizes:
+    client: true
+    default: '728*90 - leaderboard'
+    type: enum
+    choices: &codefund_choices
+      - 728*90 - leaderboard
+      - 336*280 - large rectangle
+      - 300*250 - medium rectangle
+      - 970*90 - large leaderboard
+      - 970*250 - billboard
+      - 468*60 - banner
+      - 320*50 - mobile leaderboard
+      - 160*600 - wide skyscraper
+      - 234*60 - half banner
+      - 125*125 - button
+      - 180*150 - small rectangle
+      - 200*200 - small square
+      - 250*250 - square
+      - 300*600 - half page ad
+      - 320*100 - large mobile banner
+      - 240*400 - vertical rectangle
+      - 120*600 - skyscraper
+      - 120*240 - vertical banner
+      - 120*90 - button 1
+      - 120*60 - button 2
+      - 120*30 - custom
+      - 120*20 - custom
+      - 690*250
+      - 768*1024
+      - 480*320
+      - 320*480
+      - 300*100
+      - 300*75
+      - 300*50
+      - 216*54
+      - 216*36
+      - 168*42
+      - 168*28
+  codefund_mobile_topic_list_top_code:
+    client: true
+    default: ''
+    max: 50
+  codefund_mobile_topic_list_top_ad_sizes:
+    client: true
+    default: '320*50 - mobile leaderboard'
+    type: enum
+    choices: *codefund_choices
+  codefund_target_topic_list_top_key_code:
+    default: ''
+    type: value_list
+    client: true
+  codefund_target_topic_list_top_value_code:
+    default: ''
+    type: value_list
+    client: true
+  codefund_topic_above_post_stream_code:
+    client: true
+    default: ''
+    max: 50
+  codefund_topic_above_post_stream_ad_sizes:
+    client: true
+    default: '728*90 - leaderboard'
+    type: enum
+    choices: *codefund_choices
+  codefund_mobile_topic_above_post_stream_code:
+    client: true
+    default: ''
+    max: 50
+  codefund_mobile_topic_above_post_stream_ad_sizes:
+    client: true
+    default: '320*50 - mobile leaderboard'
+    type: enum
+    choices: *codefund_choices
+  codefund_target_topic_above_post_stream_key_code:
+    default: ''
+    type: value_list
+    client: true
+  codefund_target_topic_above_post_stream_value_code:
+    default: ''
+    type: value_list
+    client: true
+  codefund_topic_above_suggested_code:
+    client: true
+    default: ''
+    max: 50
+  codefund_topic_above_suggested_ad_sizes:
+    client: true
+    default: '728*90 - leaderboard'
+    type: enum
+    choices: *codefund_choices
+  codefund_mobile_topic_above_suggested_code:
+    client: true
+    default: ''
+    max: 50
+  codefund_mobile_topic_above_suggested_ad_sizes:
+    client: true
+    default: '320*50 - mobile leaderboard'
+    type: enum
+    choices: *codefund_choices
+  codefund_target_topic_above_suggested_key_code:
+    default: ''
+    type: value_list
+    client: true
+  codefund_target_topic_above_suggested_value_code:
+    default: ''
+    type: value_list
+    client: true
+    max: 50
+  codefund_nth_post_code:
+    client: true
+    default: ''
+    min: 1
+  codefund_post_bottom_code:
+    client: true
+    default: ''
+    max: 50
+  codefund_post_bottom_ad_sizes:
+    client: true
+    default: '728*90 - leaderboard'
+    type: enum
+    choices: *codefund_choices
+  codefund_mobile_post_bottom_code:
+    client: true
+    default: ''
+    max: 50
+  codefund_mobile_post_bottom_ad_sizes:
+    client: true
+    default: '320*50 - mobile leaderboard'
+    type: enum
+    choices: *codefund_choices
+  codefund_target_post_bottom_key_code:
+    default: ''
+    type: value_list
+    client: true
+  codefund_target_post_bottom_value_code:
+    default: ''
+    type: value_list
+    client: true
