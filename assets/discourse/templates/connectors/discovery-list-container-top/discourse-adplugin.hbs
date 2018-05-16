@@ -1,9 +1,1 @@
-{{#if site.mobileView}}
-  {{#if siteSettings.codefund_mobile_topic_list_top_code}}
-    {{codefund-ad placement="topic-list-top" refreshOnChange=loading category=category.slug listLoading=listLoading}}
-  {{/if}}
-{{else}}
-  {{#if siteSettings.codefund_topic_list_top_code}}
-    {{codefund-ad placement="topic-list-top" refreshOnChange=loading category=category.slug listLoading=listLoading}}
-  {{/if}}
-{{/if}}
+{{codefund-ad placement="topic-list-top" refreshOnChange=loading category=category.slug listLoading=listLoading}}

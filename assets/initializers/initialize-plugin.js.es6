@@ -8,11 +8,10 @@ export default {
 
         PostModel.reopen({
           postSpecificCountCodeFund: function() {
-            //   return this.
+              return this.isNthPost(parseInt(siteSettings.codefund_nth_post_code))
           }.property('post_number'),
-
           isNthPost: function(n) {
-              if (n && n > 0) {
+            if (n && n > 0) {
                   return (this.get('post_number') % n) === 0;
               } else {
                   return false;
