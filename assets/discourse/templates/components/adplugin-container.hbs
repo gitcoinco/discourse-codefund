@@ -1,0 +1,9 @@
+{{#if site.mobileView}}
+  {{#if model.postSpecificCountCodeFund}}
+      {{code-fund-ad placement="post-bottom" category=model.topic.category.slug postNumber=model.post_number}}
+  {{/if}}
+{{else}}
+  {{#if model.postSpecificCountCodeFund}}
+      {{code-fund-ad placement="post-bottom" category=model.topic.category.slug postNumber=model.post_number}}
+  {{/if}}
+{{/if}}

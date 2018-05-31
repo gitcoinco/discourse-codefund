@@ -1,0 +1,8 @@
+codefund_plugin:
+  codefund_publisher_id:
+    client: true
+    default: ''
+  codefund_through_trust_level:
+    client: true
+    default: 0
+    enum: 'TrustLevelSetting'

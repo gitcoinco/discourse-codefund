@@ -1,0 +1,9 @@
+en:
+  js:
+    adplugin:
+      advertisement_label: 'ADVERTISEMENT'
+  admin_js:
+    admin:
+      site_settings:
+        categories:
+          codefund_plugin: 'Codefund'

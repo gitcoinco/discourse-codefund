@@ -1,0 +1,5 @@
+en:
+  site_settings:
+    codefund_publisher_id: "Input your network code, which is found in your network settings."
+    codefund_through_trust_level: "Show your ads to users based on trust levels. Users with trust level higher than this value will not see ads."
+    codefund_nth_post_code: "Show an ad after every N posts, where N is this value."
